@@ -25,6 +25,7 @@
         rel="stylesheet">
     <!--Font Awosome link-->
     <script src="https://kit.fontawesome.com/8abf08ec08.js" crossorigin="anonymous"></script>
+    <script src="form.js" defer></script>
 </head>
 
 <body>
@@ -54,7 +55,7 @@
         <main>
             <section class="contact__section">
                 <h1 class="color-burlywood fw-bold contact__title">LAISSER VOTRE AVIS A L'AUTEUR</h1>
-                <form action="#">
+                <form>
                     <div class="first__infos">
                         <div class="nom__info">
                             <label for="name">Votre Nom</label>
@@ -63,7 +64,7 @@
 
                         <div class="prenom__info">
                             <label for="prenom">Votre Prenom</label>
-                            <input type="text" name="Votre Prenom" id="prenom">
+                            <input type="text" name="Votre Prenom" id="firstname">
                         </div>
                     </div>
 
@@ -71,8 +72,8 @@
                         <label for="email">Votre Address Email</label>
                         <input type="email" name="Votre Email" id="email" class="email">
                         <label for="avis">Votre Avis</label>
-                        <textarea name="avis" id="avis"></textarea>
-                        <input type="submit" class="send__btn">
+                        <textarea name="avis" id="comment"></textarea>
+                        <input type="submit" class="submit__btn">
                     </div>
 
                 </form>
