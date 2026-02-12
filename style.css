@@ -240,13 +240,85 @@ main {
     transition: all 0.5s;
 }
 
+form {
+    background: white;
+    padding: 40px 20px 40px 20px;
+    margin-bottom: 25px;
+}
+
+.contact__title {
+    margin-bottom: 40px;
+}
+
+.first__infos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.first__infos input,
+.second__infos input {
+    height: 45px;
+    font-size: 20px;
+}
+
+.prenom__info {
+    width: 58%;
+}
+
+.nom__info {
+    width: 38%;
+}
+
+.nom__info input {
+    width: 100%;
+}
+
+.prenom__info input {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.second__infos {
+    padding: 0;
+}
+
+.email {
+    margin-bottom: 30px;
+}
+
+.second__infos input {
+    width: 100%;
+}
+
+.send__btn{
+    display: block;
+    width: 380px !important;
+    margin: auto;
+}
+
+footer {
+    padding: 30px;
+    background-color: #f7f7f7;
+}
+
 .footer {
-    background-color: aliceblue;
     display: flex;
     align-items: center;
-    padding: 20px;
     justify-content: space-between;
     flex-direction: row-reverse;
+    padding: 20px;
 }
 
 .dialogue__paragraphe {
@@ -280,32 +352,32 @@ address {
 
 @media screen and (max-width: 500px) {
 
-.partie__link{
-    font-size: 25px;
-    font-weight: 500;
-}
+    .partie__link {
+        font-size: 25px;
+        font-weight: 500;
+    }
 
-.lecture__block {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
+    .lecture__block {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 
-.chapitre__text {
-    width: 100%;
-}
+    .chapitre__text {
+        width: 100%;
+    }
 
-.partie__lists {
-    width: 100%;
-    background-color: rgb(35, 47, 59);
-    padding: 20px;
-}
+    .partie__lists {
+        width: 100%;
+        background-color: rgb(35, 47, 59);
+        padding: 20px;
+    }
 
-.list {
-    gap: 15px;
-    display: flex;
-    flex-direction: column;
-}
+    .list {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -340,6 +412,13 @@ address {
     .link:hover {
         border: 1px solid;
     }
+
+    .send__btn{
+    border: 2px solid red;
+    display: block;
+    width: 100% !important;
+    margin: auto;
+}
 }
 
 
