@@ -414,7 +414,6 @@ address {
     }
 
     .send__btn{
-    border: 2px solid red;
     display: block;
     width: 100% !important;
     margin: auto;
