@@ -17,7 +17,7 @@ function alert() {
 }
 
 const form = document.querySelector('form')
-const submitBtn = document.getElementById('submit-btn'); 
+const submitBtn = document.getElementById('submit__btn'); 
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
