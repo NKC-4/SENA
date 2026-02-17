@@ -13,11 +13,11 @@ function alert() {
 
     setTimeout(() => {
         alert.classList.remove('activate-alert')
-    }, 3500);
+    }, 650);
 }
 
 const form = document.querySelector('form')
-const submitBtn = document.getElementById('submit__btn'); 
+const submitBtn = document.getElementById('submit__btn');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -27,7 +27,7 @@ form.addEventListener('submit', async (e) => {
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('comment').value.trim();
 
-    if (name === '' || firstname ==='' || email === '' || message === '') {
+    if (name === '' || firstname === '' || email === '' || message === '') {
         alert()
         submitBtn.disabled = false
         return;

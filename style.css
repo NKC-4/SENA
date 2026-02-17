@@ -22,6 +22,19 @@ ul {
     padding: 0;
 }
 
+#alert {
+    border: 3px solid red;
+    font-size: 20px;
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+.activate-alert {
+    display: block !important;
+
+}
+
 li,
 a {
     list-style: none;
@@ -302,7 +315,7 @@ textarea {
     width: 100%;
 }
 
-.send__btn{
+.send__btn {
     display: block;
     width: 380px !important;
     margin: auto;
@@ -413,11 +426,11 @@ address {
         border: 1px solid;
     }
 
-    .send__btn{
-    display: block;
-    width: 100% !important;
-    margin: auto;
-}
+    .send__btn {
+        display: block;
+        width: 100% !important;
+        margin: auto;
+    }
 }
 
 
