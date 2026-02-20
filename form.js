@@ -49,7 +49,7 @@ form.addEventListener('submit', async (e) => {
 
         if (response.ok) {
             form.reset();
-            window.location.href = "https://savoirdesartisans.netlify.app/merci.html";
+            window.location.href = "https://nkc-4.github.io/SENA/merci";
         } else {
             alert("Erreur lors de l'envoi du message.");
         }
