@@ -88,6 +88,7 @@ a {
     margin: 0 !important;
     font-size: 16px;
     transition: all 0.5;
+    font-weight: 900;
 }
 
 .link:hover,
@@ -112,10 +113,6 @@ a {
 .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-}
-
-.chap__blocks {
-    scroll-margin-top: 100px;
 }
 
 /*Fin du header pour le 05/11/2025*/
@@ -149,13 +146,14 @@ main {
 }
 
 .book {
-    font-size: 19px;
+    font-size: 20px;
     color: rgb(29, 61, 87);
+    width: 120px;
 }
 
 .book:hover,
 .partie__link:hover {
-    transform: scaleY(1.3);
+    transform: scaleY(1.2);
 }
 
 .book__item {
@@ -166,7 +164,7 @@ main {
 .slogan {
     font-style: italic;
     margin-left: 12px;
-    color: rgb(116, 92, 61);
+    /*color: rgb(116, 92, 61);*/
     font-family: "Playfair Display", serif;
 }
 
@@ -223,12 +221,21 @@ main {
 }
 
 .chap__blocks {
+    scroll-margin-top: 100px;
+}
+
+.chap__blocks p{
+    line-height: 32px;
+}
+
+.chap__blocks {
     overflow-y: scroll;
     height: 400px;
     padding: 20px;
     color: rgb(22, 28, 39);
     font-size: 18px;
     line-height: 25px;
+    border-bottom: 7px solid rgb(104, 102, 102);
 }
 
 .list {
