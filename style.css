@@ -44,7 +44,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     position: sticky;
     top: 20px;
@@ -54,7 +54,10 @@ a {
 }
 
 .logo__container {
-    border: 1px solid red;
+    width: 110px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {
@@ -123,7 +126,7 @@ main {
 }
 
 main {
-    padding: 20px;
+    padding: 0 20px 0 20px;
 }
 
 .color-burlywood {
@@ -224,7 +227,7 @@ main {
     scroll-margin-top: 100px;
 }
 
-.chap__blocks p{
+.chap__blocks p {
     line-height: 32px;
 }
 
@@ -401,6 +404,15 @@ address {
 }
 
 @media screen and (max-width: 580px) {
+
+    .header {
+        align-items: center;
+    }
+
+    .logo__container {
+        width: 150px;
+        height: 100px;
+    }
 
     .navbar-toggler {
         display: block;
