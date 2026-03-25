@@ -382,6 +382,10 @@ footer {
     color: blue;
 }
 
+.foorter__nav a{
+    text-decoration: underline;
+}
+
 .logo__footer {
     width: 200px;
     height: 150px;
