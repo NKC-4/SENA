@@ -119,6 +119,11 @@ a {
     flex-basis: auto;
 }
 
+.avis__title{
+    line-height: 48px;
+    letter-spacing: 2px;
+}
+
 /*Fin du header pour le 05/11/2025*/
 /*Le debut du code de la section hero*/
 
