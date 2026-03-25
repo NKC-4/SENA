@@ -48,7 +48,7 @@ a {
     width: 100%;
     position: sticky;
     top: 20px;
-    background-color: #f7f7f7;
+    background-color: #f7f7f7f3;
     z-index: 1;
     margin-bottom: 40px;
 }
@@ -62,6 +62,7 @@ a {
 
 .navbar {
     padding: 0;
+    padding-right: 30px;
 }
 
 #navbarNav {
@@ -332,16 +333,16 @@ textarea {
 }
 
 footer {
-    padding: 30px;
-    background-color: #f7f7f7;
+    padding: 38px 38px 0 38px;
+    background-color: #f7f7f7f6;
 }
 
 .footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row-reverse;
-    padding: 20px;
+    gap: 180px;
+    margin-bottom: 25px;
 }
 
 .dialogue__paragraphe {
@@ -367,10 +368,25 @@ footer {
     transform: translateY(-15px) scale(0.9);
 }
 
-address {
+.mention {
     margin: 0;
-    width: 90%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+.mention span {
+    font-style: normal;
+    margin-left: 5px;
+    color: blue;
+}
+
+.logo__footer {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    margin: auto;
 }
 
 @media screen and (max-width: 500px) {
@@ -456,5 +472,58 @@ address {
 @media screen and (max-width: 730px) {
     .second__block {
         display: none;
+    }
+
+    .header, footer{
+        background-color: rgb(205, 212, 218);
+    }
+}
+
+@media screen and (max-width: 465px) {
+   
+    .logo__footer {
+        width: 160px;
+        height: 145px;
+    }
+
+    .foorter__nav {
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+     .footer {
+        justify-content: space-between !important;
+        gap: 0;
+    }
+
+    .foorter__nav {
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+footer {
+        padding: 30px 30px 0 30px;
+    }
+
+.mention, .foorter__nav a{
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 364px) {
+footer {
+        padding: 25px 20px 0 20px;
+    }
+
+}
+
+@media screen and (max-width: 345px) {
+footer {
+        padding: 30px 15px 0 15px;
     }
 }

@@ -9,11 +9,11 @@ function alert() {
     alert.appendChild(message);
 
     alert.classList.add("activate-alert");
-    message.innerText = "Veuillez remplir tous les champs";
+    message.innerText = "Veuillez remplir tous les champs.";
 
     setTimeout(() => {
         alert.classList.remove('activate-alert')
-    }, 650);
+    }, 750);
 }
 
 const form = document.querySelector('form')
