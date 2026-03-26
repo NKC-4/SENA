@@ -22,7 +22,8 @@ ul {
     padding: 0;
 }
 
-#alert {
+#alert,
+.alert {
     border: 3px solid red;
     font-size: 20px;
     color: red;
@@ -119,7 +120,7 @@ a {
     flex-basis: auto;
 }
 
-.avis__title{
+.avis__title {
     line-height: 48px;
     letter-spacing: 2px;
 }
@@ -173,7 +174,6 @@ main {
 .slogan {
     font-style: italic;
     margin-left: 12px;
-    /*color: rgb(116, 92, 61);*/
     font-family: "Playfair Display", serif;
 }
 
@@ -181,7 +181,8 @@ main {
     text-align: end;
 }
 
-.read__more-link {
+.read__more-link,
+.save__btn {
     display: inline-block;
     padding: 12px;
     color: white;
@@ -190,18 +191,70 @@ main {
     font-size: 18px;
     font-weight: 400;
     transition: all 0.5s;
+    border: none;
 }
 
-.read__more-link:hover {
+.read__more-link:hover,
+.save__btn:hover {
     color: rgb(54, 53, 53);
     font-size: 18.3px;
     font-weight: 500;
 }
 
-.presatation {
+.presentation {
     display: flex;
     gap: 25px;
     margin-bottom: 20px;
+}
+
+.block__note {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    color: #f7f7f7;
+    border-top: 5px solid;
+    padding-top: 45px;
+}
+
+.block__note label {
+    background-color: rgb(235, 175, 96);
+    padding: 12px 2px;
+    display: block;
+    border-radius: 12px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.block__note input {
+    padding: 8px;
+}
+
+.level__saved,
+.succes__infos {
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(15, 231, 44);
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+    font-size: 20px;
+    display: none;
+}
+
+.level__saved {
+    margin: 20px;
+}
+
+.alert {
+    font-size: 20px;
+    background-color: red;
+    text-align: center;
+    display: block;
+}
+
+
+.block__activate {
+    display: block;
 }
 
 .second__block {
@@ -222,6 +275,7 @@ main {
 .chapitre__text {
     width: 80%;
 }
+
 
 .partie__lists {
     width: 40%;
@@ -251,6 +305,7 @@ main {
     gap: 75px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 35px;
 }
 
 .sommaire__list {
@@ -387,7 +442,7 @@ footer {
     color: blue;
 }
 
-.foorter__nav a{
+.foorter__nav a {
     text-decoration: underline;
 }
 
@@ -425,7 +480,13 @@ footer {
         gap: 15px;
         display: flex;
         flex-direction: column;
+        margin-bottom: 15px;
     }
+
+    .block__note {
+        padding-top: 20px;
+    }
+
 }
 
 @media screen and (max-width: 580px) {
@@ -483,13 +544,14 @@ footer {
         display: none;
     }
 
-    .header, footer{
+    .header,
+    footer {
         background-color: rgb(205, 212, 218);
     }
 }
 
 @media screen and (max-width: 465px) {
-   
+
     .logo__footer {
         width: 160px;
         height: 145px;
@@ -502,7 +564,7 @@ footer {
 }
 
 @media screen and (max-width: 580px) {
-     .footer {
+    .footer {
         justify-content: space-between !important;
         gap: 0;
     }
@@ -515,24 +577,25 @@ footer {
 
 @media screen and (max-width: 425px) {
 
-footer {
+    footer {
         padding: 30px 30px 0 30px;
     }
 
-.mention, .foorter__nav a{
-    font-size: 14px;
-}
+    .mention,
+    .foorter__nav a {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 364px) {
-footer {
+    footer {
         padding: 25px 20px 0 20px;
     }
 
 }
 
 @media screen and (max-width: 345px) {
-footer {
+    footer {
         padding: 30px 15px 0 15px;
     }
 }

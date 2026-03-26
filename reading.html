@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 
     <link rel="stylesheet" href="style.css">
-    <script src="js/scripts.js" defer></script>
+    <script src="js/note.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +54,7 @@
             </nav>
 
         </header>
+        <p class="level__saved" id="level__saved">Ex : Chapitre 2 (Puis la vie...)</p>
 
         <main class="container">
             <section class="hero hero__reading">
@@ -98,8 +99,15 @@
                             <li class="partie__item">
                                 <a href="#postface__chap" class="partie__link">Postface...</a>
                             </li>
-
                         </ul>
+
+                        <!-- Block de sauvegarde de niveau-->
+                        <div class="block__note" id="block__note">
+                            <label for="note" id="note__label">Saisir votre progression actuelle</label>
+                            <p class="succes__infos" id="succes__infos"></p>
+                            <input type="text" name="note" id="note" placeholder="Ex : Chapitre 2 (Puis la vie...)">
+                            <button class="save__btn" id="save__btn">Sauvegarder le niveau</button>
+                        </div>
                     </div>
 
                     <div class="chapitre__text">
