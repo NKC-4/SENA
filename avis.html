@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&family=Sekuya&display=swap"
         rel="stylesheet">
+
+        <!--Inter font link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!--Font Awosome link-->
     <script src="https://kit.fontawesome.com/8abf08ec08.js" crossorigin="anonymous"></script>
     <script src="form.js" defer></script>
@@ -32,7 +37,7 @@
     <div class="page-bg">
         <header class="header">
 
-            <div class="logo__container">
+            <div class="logo__container header__logo">
                 <img src="images/logo.png" class="logo" alt="logo de halo">
             </div>
 
@@ -65,7 +70,7 @@
                         </div>
 
                         <div class="prenom__info">
-                            <label for="prenom">Prenom</label>
+                            <label for="firstname">Prenom</label>
                             <input type="text" name="Votre Prenom" id="firstname">
                         </div>
                     </div>
@@ -73,7 +78,7 @@
                     <div class="second__infos">
                         <label for="email">Address Email</label>
                         <input type="email" name="Votre Email" id="email" class="email">
-                        <label for="avis">Votre Commentaire</label>
+                        <label for="comment">Votre Commentaire</label>
                         <textarea name="avis" id="comment"></textarea>
                         <input type="submit" class="submit__btn" id="submit__btn">
                     </div>
@@ -84,7 +89,8 @@
 
         <footer>
             <div class="footer">
-                <div class="header__boton"><a href="#hero__head "><i class="fa-solid fa-arrow-up"></i></a></div>
+                <div class="header__boton"><a href="#hero__head" class="retour__link"><span class="retour">Retour en
+                            haut</span><i class="fa-solid fa-arrow-up"></i></a></div>
                 <p class="mention">© 2026 SENA<span>KdC_Ser</span>. Tous droits réservés</p>
             </div>
 
@@ -100,6 +106,7 @@
                 <img src="images/logo.png" class="logo" alt="logo de halo">
             </div>
         </footer>
+        </div>
 </body>
 
 </html>
